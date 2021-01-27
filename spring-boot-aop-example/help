@@ -1,0 +1,16 @@
+
+http://localhost:8080/add/employee?empId=100&name=radha
+
+and check the Console logs for advice messages
+
+@EnableAutoConfiguration
+The @SpringBootApplication annotation contains the @EnableAutoConfiguration annotation.
+This auto-configuration is one of the attractions of Spring Boot and makes configuration simpler.
+The auto configuration uses @Conditional type annotations (like @ConditionalOnClass and @ConditionalOnProperty) to scan the classpath and look for key classes that trigger the loading of 'modules' like AOP
+
+Enables support for handling components marked with aspectJ's @Aspect annotation
+User can control the type of proxy , JDK proxy or CGLIB style
+to chose CGLIB @EnableAutoConfiguration(proxyTargetClass=true)
+
+
+
